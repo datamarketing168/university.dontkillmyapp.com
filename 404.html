@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>404 - Halaman Nyasar</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+    body {
+      background-color: #0d0d0d;
+      color: #00ff99;
+      font-family: 'VT323', monospace;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .code {
+      font-size: 120px;
+      font-weight: bold;
+      color: #ff0040;
+      text-shadow: 0 0 10px #ff0040;
+      animation: glitch 1s infinite;
+    }
+
+    .panda {
+      width: 220px;
+      margin: 30px auto;
+      filter: drop-shadow(0 0 10px #ffcc00);
+    }
+
+    .message, .stecu, .gokil {
+      font-size: 22px;
+      margin: 20px auto;
+      max-width: 600px;
+      line-height: 1.5;
+    }
+
+    .glow {
+      color: #00ffee;
+      text-shadow: 0 0 5px #00ffee, 0 0 10px #00ffee;
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 10px 25px;
+      font-size: 20px;
+      border: 2px solid #00ff99;
+      background-color: transparent;
+      color: #00ff99;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #00ff99;
+      color: #0d0d0d;
+    }
+
+    @keyframes glitch {
+      0% { transform: skew(0.5deg); }
+      25% { transform: translate(2px, -2px); }
+      50% { transform: translate(-1px, 1px); }
+      75% { transform: translate(3px, 0px); }
+      100% { transform: translate(0px, 0px); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="code">404</div>
+  <img src="https://i.pinimg.com/originals/e7/7f/33/e77f33c70e25065583cf082718880535.gif" alt="Panda Lucu" class="panda">
+  <div class="message glow">Oops! Kamu nyasar ke tempat yang bahkan Google Maps pun bingung 😵‍💫</div>
+  <div class="stecu">💬 STECU-STECU: Ada niat, ada dompet... tapi inget, transfer dulu baru lanjut 🚀</div>
+  <div class="gokil">⚠️ Halaman ini kayak mantan: udah gak penting tapi masih suka dikunjungi 😆</div>
+  <button class="btn" onclick="window.location.href='/'">Balik ke Jalan yang Benar</button>
+
+</body>
+</html>
